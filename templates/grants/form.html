@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<a href="{% url 'dashboard' %}">← Dashboard</a><section class="panel"><p class="eyebrow">APPLICATION DRAFT</p><h1>{{ call.title }}</h1><p>Limit: {{ call.currency }} {{ call.max_amount }} · Deadline: {{ call.deadline }}</p><form method="post">{% csrf_token %}{{ form.as_p }}<button>Save draft</button></form></section>{% endblock %}

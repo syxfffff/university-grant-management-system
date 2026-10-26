@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<section class="panel narrow"><p class="eyebrow">RESEARCH STARTS HERE</p><h1>Welcome to OpenGrant</h1><p>Sign in to manage your funding applications.</p><form method="post">{% csrf_token %}{{ form.as_p }}<button>Sign in</button></form><p class="muted">Ask your administrator for an account or a password reset.</p></section>{% endblock %}
